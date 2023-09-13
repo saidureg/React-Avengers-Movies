@@ -24,10 +24,10 @@ const Home = () => {
     selectActor.forEach((actor) => {
       salary = salary + actor.salary;
     });
-    const rest = 50000 - salary;
+    const rest = 40000 - salary;
 
     if (rest < 0) {
-      return alert("Budge nai next movie try again");
+      return alert("Budget nai!!! Try again in next movie ");
     }
     setCount(salary);
     setRemaining(rest);
